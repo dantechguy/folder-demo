@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  user-select: none;
+  --ul-width: 200px;
+  /*overflow: hidden;*/
+}
+
+body * {
+  font-family: consolas, monospace;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 30px;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* all */
+button, input, ul, textarea {
+  border: 1px solid #fff;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+
+/* top */
+button, input {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  height: 100%;
+}
+
+/* left */
+ul {
+  width: var(--ul-width);
+}
+
+/* right */
+input, textarea {
+  padding-left: 2px;
+  width: calc(100% - var(--ul-width));
+}
+
+/* bottom */
+pre, ul, textarea {
+  display: inline-block;
+  height: calc(100vh - 30px);
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+
+/* sidebar ul*/
+ul {
+  overflow: auto;
+}
+
+/* top left buttons */
+button {
+  width: calc(var(--ul-width) / 2);
+}
+
+/* text area */
+textarea {
+  resize: none;
+}
+
+/* input placeholder text */
+::placeholder {
+  color: grey;
+}
+
+/* clickable button and li */
+button:active, li.clickable:active {
+  background-color: #fff;
+  color: #000;
+}
+
+/* sidebar li */
+li {
+  width: all;
+  padding: 2px 0 2px 2px;
+  border-bottom: 1px solid #333;
+}
+
+/* sidebar folder */
+.folder {
+  /* font-weight: 900; */
+}
